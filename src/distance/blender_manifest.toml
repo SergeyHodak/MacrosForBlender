@@ -1,0 +1,73 @@
+schema_version = "1.0.0"
+
+# Приклад файлу manifest для розширення Blender
+# Змініть значення відповідно до свого розширення
+id = "get_distance"
+version = "1.0.0"
+name = "отримати Дистанцію"
+tagline = "отримати дистанцію між двома вершинами"
+maintainer = "Ім'я розробника <sergey.hodak3@gmail.com>"
+# Підтримувані типи: "add-on", "theme"
+type = "add-on"
+
+# Додаткове посилання на документацію, підтримку, вихідні файли тощо
+# веб-сайт = "https://github.com/SergeyHodak/MacrosForBlender"
+
+# Додатковий список, визначений Blender і сервером, див.:
+# https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html
+tags = ["Geometry Nodes"]
+
+blender_version_min = "4.2.1"
+# # Додатково: версія Blender, яку розширення не підтримує, підтримуються більш ранні версії.
+# # Це можна пропустити та визначити пізніше на платформі розширень, якщо буде виявлено проблему.
+# blender_version_max = "5.1.0"
+
+# Ліцензія, яка відповідає https://spdx.org/licenses/ (використовуйте «SPDX: префікс)
+# https://docs.blender.org/manual/en/dev/advanced/extensions/licenses.html
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+# Необов’язково: потрібно для деяких ліцензій.
+# copyright = [
+#   "2002-2024 Developer Name",
+#   "1998 Company Name",
+# ]
+
+# Додатковий список підтримуваних платформ. Якщо пропущено, розширення буде доступним у всіх операційних системах.
+# platforms = ["windows-x64"]
+# Інші підтримувані платформи:
+
+# Необов’язково: об’єднуйте сторонні модулі Python.
+# https://docs.blender.org/manual/en/dev/advanced/extensions/python_wheels.html
+# wheels = [
+#   "./wheels/hexdump-3.3-py3-none-any.whl",
+#   "./wheels/jsmin-3.0.1-py3-none-any.whl",
+# ]
+
+# # Необов’язково: додатки можуть вказувати, які ресурси їм знадобляться:
+# # * файли (для доступу до будь-яких операцій файлової системи)
+# # * мережа (для доступу в Інтернет)
+# # * буфер обміну (для читання та/або запису системного буфера обміну)
+# # * камера (для зйомки фото та відео)
+# # * мікрофон (для запису звуку)
+# #
+# # Якщо ви використовуєте мережу, не забудьте також перевірити `bpy.app.online_access`
+# # https://docs.blender.org/manual/en/dev/advanced/extensions/addons.html#internet-access
+# #
+# # Для кожного дозволу важливо також вказати причину, чому він потрібен.
+# # Збережіть це коротке речення без крапки (.) у кінці.
+# # Для більш детальних пояснень скористайтеся документацією або сторінкою з інформацією.
+#
+# [permissions]
+# network = "Необхідно синхронізувати дані зйомки руху із сервером"
+# files = "Імпорт/експорт FBX з/на диск"
+# clipboard = "Скопіюйте та вставте трансформації кістки"
+
+# Додатково: налаштування збірки.
+# https://docs.blender.org/manual/en/dev/advanced/extensions/command_line_arguments.html#command-line-args-extension-build
+# [build]
+# paths_exclude_pattern = [
+#   "__pycache__/",
+#   "/.git/",
+#   "/*.zip",
+# ]
